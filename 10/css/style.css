@@ -139,21 +139,27 @@
 .page__container {
   position: relative;
 }
-.zigzag {
+.page__container::after {
+  content: "";
+  background-image: url("../img/zigzag-fill-desktop.svg");
+  background-repeat: repeat-x;
   display: none;
   width: 100%;
   position: absolute;
 }
 @media (min-width: 768px) {
-  .zigzag {
+  .page__container::after {
+    background-size: cover;
     min-width: 770px;
+    height: 24px;
     display: block;
-    bottom: -5px;
+    bottom: 0;
   }
 }
 @media (min-width: 1150px) {
-  .zigzag {
+  .page__container::after {
     min-width: 1150px;
+    height: 34px;
     bottom: 0;
   }
 }
@@ -450,6 +456,29 @@
   background-color: #fafafa;
   position: relative;
 }
+.catalog::after {
+  content: "";
+  background-image: url("../img/zigzag-fill-desktop.svg");
+  background-repeat: repeat-x;
+  display: none;
+  width: 100%;
+  position: absolute;
+}
+@media (min-width: 768px) {
+  .catalog::after {
+    bottom: -2px;
+    background-size: cover;
+    min-width: 770px;
+    height: 24px;
+    display: block;
+  }
+}
+@media (min-width: 1150px) {
+  .catalog::after {
+    min-width: 1150px;
+    height: 34px;
+  }
+}
 .catalog__list {
   display: flex;
   flex-direction: column;
@@ -528,7 +557,7 @@
     top: 30px;
   }
 }
-@media (min-width: 768px) {
+@media (min-width: 1150px) {
   .catalog__link--interior::after {
     top: 36px;
   }
@@ -548,7 +577,7 @@
     right: 33px;
   }
 }
-@media (min-width: 768px) {
+@media (min-width: 1150px) {
   .catalog__link--childs::after {
     right: 35px;
   }
@@ -1952,7 +1981,7 @@
   display: none;
   width: 24px;
   height: 16px;
-  background-image: url("../img/Tick.svg");
+  background-image: url("../img/tick.svg");
   background-repeat: no-repeat;
 }
 @media (min-width: 768px) {
