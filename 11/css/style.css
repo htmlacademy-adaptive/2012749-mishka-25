@@ -440,16 +440,6 @@
     background-size: 320px auto;
   }
 }
-@media (-webkit-min-device-pixel-ratio: 3), (min-resolution: 3dppx) {
-  .index-container {
-    background-image: url("../img/hero-mobile@3.png");
-  }
-}
-@media (-webkit-min-device-pixel-ratio: 4), (min-resolution: 4dppx) {
-  .index-container {
-    background-image: url("../img/hero-mobile@4.png");
-  }
-}
 @media (min-width: 768px) {
   .index-container {
     padding-top: 89px;
@@ -463,16 +453,6 @@
 @media (min-width: 768px) and (-webkit-min-device-pixel-ratio: 2), (min-width: 768px) and (min-resolution: 2dppx) {
   .index-container {
     background-image: url("../img/hero-desktop@2.png");
-  }
-}
-@media (min-width: 768px) and (-webkit-min-device-pixel-ratio: 3), (min-width: 768px) and (min-resolution: 3dppx) {
-  .index-container {
-    background-image: url("../img/hero-desktop@3.png");
-  }
-}
-@media (min-width: 768px) and (-webkit-min-device-pixel-ratio: 4), (min-width: 768px) and (min-resolution: 4dppx) {
-  .index-container {
-    background-image: url("../img/hero-desktop@4.png");
   }
 }
 @media (min-width: 1150px) {
@@ -1047,16 +1027,6 @@
     background-size: 350px auto;
   }
 }
-@media (min-width: 768px) and (-webkit-min-device-pixel-ratio: 3), (min-width: 768px) and (min-resolution: 3dppx) {
-  .review {
-    background-image: url("../img/review-background@3.png");
-  }
-}
-@media (min-width: 768px) and (-webkit-min-device-pixel-ratio: 4), (min-width: 768px) and (min-resolution: 4dppx) {
-  .review {
-    background-image: url("../img/review-background@4.png");
-  }
-}
 @media (min-width: 1150px) {
   .review {
     padding-bottom: 96px;
@@ -1570,8 +1540,8 @@
   border: 1px solid #ececec;
   border-top: none;
   display: block;
-  width: 260px;
-  padding: 29px 27px 26px 27px;
+  width: 206px;
+  padding: 29px 25px 26px 27px;
 }
 @media (min-width: 768px) {
   .products__add {
@@ -1580,18 +1550,18 @@
     justify-content: space-between;
     border-top: 1px solid #ececec;
     border-left: none;
-    width: 334px;
-    height: 334px;
-    padding: 26px 33px 25px 35px;
+    width: 266px;
+    height: 283px;
+    padding: 26px 33px 24px 35px;
   }
 }
 @media (min-width: 1150px) {
   .products__add {
-    padding: 28px 34px 24px 27px;
+    padding: 28px 34px 24px 26px;
     border: 1px solid #ececec;
     border-top: none;
-    width: 316px;
-    height: 197px;
+    width: 253px;
+    height: 145px;
   }
 }
 .products__add--long-name {
